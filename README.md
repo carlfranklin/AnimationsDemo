@@ -1,2 +1,2 @@
 # AnimationsDemo
-Demo of MAUI Anumations with Windows Fullscreen support
+Demo of MAUI Animations with Windows Fullscreen support
