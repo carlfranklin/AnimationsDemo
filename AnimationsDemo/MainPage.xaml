@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimationsDemo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+
+            <Label 
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label 
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level1"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Label 
+                Text=""
+                FontSize="18"
+                FontAttributes="Bold"
+                x:Name="AnimationLabel"
+                HorizontalOptions="Center" />
+
+            <HorizontalStackLayout Spacing="25" Padding="30" >
+                <Button 
+                    Text="Fade"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Play Fade Animation"
+                    Clicked="OnFadeAnimationClicked"
+                    HorizontalOptions="Center" />
+
+                <Button 
+                    Text="Rotate"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Play Rotate Animation"
+                    Clicked="OnRotateAnimationClicked"
+                    HorizontalOptions="Center" />
+
+                <Button 
+                    Text="Scale"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Play Scale Animation"
+                    Clicked="OnScaleAnimationClicked"
+                    HorizontalOptions="Center" />
+
+                <Button 
+                    Text="Translate"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Play Translate Animation"
+                    Clicked="OnTranslateAnimationClicked"
+                    HorizontalOptions="Center" />
+
+                <Button 
+                    Text="Composite"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Play Composite Animation"
+                    Clicked="OnCompositeAnimationClicked"
+                    HorizontalOptions="Center" />
+
+                <Button 
+                    Text="Easing Bounce Out"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Play Easing Bounce Out Animation"
+                    Clicked="OnEasingBounceOutAnimationClicked"
+                    HorizontalOptions="Center" />
+
+                <Button 
+                    Text="Cancel Animation"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Cancel the dot net bot animation"
+                    Clicked="OnCancelAnimationClicked"
+                    HorizontalOptions="Center" />
+                
+            </HorizontalStackLayout>
+
+            <Image
+                x:Name="dotNetBotImage"
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="250"
+                HeightRequest="500"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
